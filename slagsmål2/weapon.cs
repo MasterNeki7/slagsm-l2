@@ -1,6 +1,20 @@
-public class weapon
+public class Weapon
 {
     public int extraDmg;
-    public int extraHp;
-    
+    public int extraCrit;
+
+    public string name;
+
+    List<String> Weapons = new List<string>() { "Dagger", "Axe", "Spear" };
+
+    public void AddDamage()
+    {
+
+    }
+
+    public void AddCrit()
+    {
+
+    }
+
 }
