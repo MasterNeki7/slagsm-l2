@@ -5,7 +5,7 @@ public class Weapon
 
     public string name;
 
-    List<String> Weapons = new List<string>() { "Dagger", "Axe", "Spear" };
+    public List<String> Weapons = new List<string>() { "Dagger", "Axe", "Spear" };
 
     public void AddDamage()
     {

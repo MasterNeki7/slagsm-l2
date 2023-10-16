@@ -2,9 +2,9 @@ public class Fighter
 {
     Random gen = new Random();
 
-    List<String> Fighters = new List<String>() { "Yuriy Olegovic Garbachov Petrov XII", "Baltazar", "Hector" };
+    public List<String> Fighters = new List<String>() { "Yuriy Olegovic Garbachov Petrov XII", "Baltazar", "Hector" };
 
-    public Weapon weapon;
+    public Weapon weapon = new();
     public int baseHp;
     public int baseDmg;
     public int baseCrit;
@@ -12,8 +12,8 @@ public class Fighter
 
     public Fighter()
     {
-        name = "";
-        weapon = new Weapon() { name = "" };
+        name = Fighters[gen.Next(Fighters.Count)];
+        weapon = new Weapon() {name = weapon.Weapons[gen.Next(weapon.Weapons.Count)]};
     }
 
     public void Attack()
