@@ -1,19 +1,29 @@
-﻿List<Fighter> fighters = new();
-fighters.Add(new Tagilla());
-fighters.Add(new Fighter());
-fighters.Add(new Fighter());
-fighters.Add(new Fighter());
+﻿    List<Enemy> enemies = new();
 
-Fighter Player = new Fighter();
-Console.WriteLine("name your fighter!");
+    Random generator = new Random();
 
-Player.name = Console.ReadLine();
-Console.WriteLine("Choose your fighter!");
+    for (int i = 0; i < 3; i++)
+    {
+        if (generator.Next(4) == 3 && enemies.Count(enemy => enemy.name == "Tagilla") == 0)
+        {
+            enemies.Add(new Tagilla());
+        }
+        else
+        {
+            enemies.Add(new Enemy());
+        }
+    }
 
-foreach (Fighter f in fighters)
-{
-    Console.WriteLine(f.name);
-}
+    Enemy Player = new Enemy();
+    Console.WriteLine("name your fighter!");
+
+    Player.name = Console.ReadLine();
+    Console.WriteLine("Choose your opponent!");
+
+    foreach (Enemy e in enemies)
+    {
+        Console.WriteLine(e.name);
+    }
 
 
 

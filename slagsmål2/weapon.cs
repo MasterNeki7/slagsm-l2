@@ -7,14 +7,4 @@ public class Weapon
 
     public List<String> Weapons = new List<string>() { "Dagger", "Axe", "Spear" };
 
-    public void AddDamage()
-    {
-
-    }
-
-    public void AddCrit()
-    {
-
-    }
-
 }
