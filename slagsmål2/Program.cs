@@ -9,6 +9,7 @@ Console.WriteLine("name your fighter!");
 
 Player.name = Console.ReadLine();
 Console.WriteLine("Choose your fighter!");
+
 foreach (Fighter f in fighters)
 {
     Console.WriteLine(f.name);

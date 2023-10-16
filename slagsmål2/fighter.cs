@@ -5,10 +5,13 @@ public class Fighter
     public List<String> Fighters = new List<String>() { "Yuriy Olegovic Garbachov Petrov XII", "Baltazar", "Hector" };
 
     public Weapon weapon = new();
-    public int baseHp;
-    public int baseDmg;
-    public int baseCrit;
+    public int baseHp = 100;
+    public int baseDmg = 5;
+    public int baseCrit = 5;
     public string name;
+
+    public int critChance;
+    public int dmg;
 
     public Fighter()
     {
@@ -18,7 +21,9 @@ public class Fighter
 
     public void Attack()
     {
+        
 
+        CritChance();
     }
 
     public void Defend()
@@ -28,7 +33,11 @@ public class Fighter
 
     public void CritChance()
     {
-
+        critChance = gen.Next(30);
+        if(critChance < baseCrit)
+        {
+            dmg = dmg * 2;
+        }
     }
 
 }
