@@ -2,7 +2,7 @@
 
     Random generator = new Random();
 
-    for (int i = 0; i < 3; i++)
+    for (int i = 0; i < 1; i++)
     {
         if (generator.Next(4) == 3 && enemies.Count(enemy => enemy.name == "Tagilla") == 0)
         {
@@ -16,9 +16,11 @@
 
     Enemy Player = new Enemy();
     Console.WriteLine("name your fighter!");
-
     Player.name = Console.ReadLine();
-    Console.WriteLine("Choose your opponent!");
+
+
+    Console.Clear();
+    Console.WriteLine($"{Player.name} will be fighting:");
 
     foreach (Enemy e in enemies)
     {
