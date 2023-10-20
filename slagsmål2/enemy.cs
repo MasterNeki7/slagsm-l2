@@ -1,44 +1,28 @@
-public class Enemy
+public class Enemy : Player
 {
     Random gen = new Random();
 
-    public Weapon weapon = new();
-    public int baseHp = 100;
-    public int baseDmg = 5;
-    public int baseCrit = 5;
-    public string name;
+    public List<String> Enemies = new List<String>() { "Yuriy Olegovic Garbachov Petrov IX", "Baltazar Octavius Bartholomew Jr", "Hector Mc Ewen Quintalius Carolus VI", "Robert Aurelius Cesie Cornelius XV" };
 
-    public int critChance;
-    public int dmg;
-    public int hp;
+    public Enemy()
+    {
+        int[] baseHpAlts = { 440, 560, 740 };
+        baseHp = baseHpAlts[gen.Next(baseHpAlts.Length)];
+        baseDmg = 5;
 
-        public List<String> Enemies = new List<String>() { "Yuriy Olegovic Garbachov Petrov IX", "Baltazar Octavius Bartholomew Jr", "Hector Mc Ewen Quintalius Carolus VI", "Robert Aurelius Cesie Cornelius XV" };
+        name = Enemies[gen.Next(Enemies.Count)];
+        weapon = new Weapon() { name = weapon.Weapons[gen.Next(weapon.Weapons.Count)] };
+    }
 
-        public Enemy()
-        {
-            name = Enemies[gen.Next(Enemies.Count)];
-            weapon = new Weapon() {name = weapon.Weapons[gen.Next(weapon.Weapons.Count)]};
-        }
+    public void Attack()
+    {
 
-        public void Attack()
-        {
-            CritChance();
-            
-        }
+    }
 
-        public void Defend()
-        {
+    public void Defend()
+    {
 
-        }
-
-        public void CritChance()
-        {
-            critChance = gen.Next(30);
-            if(critChance < baseCrit)
-            {
-                dmg = dmg * 2;
-            }
-        }
+    }
 
 }
 

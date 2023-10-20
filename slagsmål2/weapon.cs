@@ -1,7 +1,6 @@
 public class Weapon
 {
-    public int extraDmg;
-    public int extraCrit;
+    public int weaponDmg;
 
     public string name;
 

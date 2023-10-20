@@ -5,11 +5,9 @@ public class Tagilla : Enemy
 
     public Weapon weapon = new();
     public int baseHp = 1220;
-    public int baseDmg = 116;
-    public int baseCrit = 50;
+    public int baseDmg = 125;
     public string name;
 
-    public int critChance;
     public int dmg;
     public int hp;
 
@@ -21,7 +19,6 @@ public class Tagilla : Enemy
 
             public void Attack()
         {
-            CritChance();
             
         }
 
@@ -30,12 +27,4 @@ public class Tagilla : Enemy
 
         }
 
-        public void CritChance()
-        {
-            critChance = gen.Next(30);
-            if(critChance < baseCrit)
-            {
-                dmg = dmg * 2;
-            }
-        }
 }

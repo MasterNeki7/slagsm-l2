@@ -15,18 +15,18 @@
     }
 
     Enemy Player = new Enemy();
-    Console.WriteLine("name your fighter!");
+    Console.WriteLine("Name your PMC");
     Player.name = Console.ReadLine();
 
 
     Console.Clear();
-    Console.WriteLine($"{Player.name} will be fighting:");
+    Console.WriteLine($"{Player.name} encountered");
 
     foreach (Enemy e in enemies)
     {
         Console.WriteLine(e.name);
     }
 
-
+    Console.WriteLine($"!");
 
 Console.ReadLine();
