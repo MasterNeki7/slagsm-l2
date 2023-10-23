@@ -42,5 +42,9 @@
     {
         "Name": "M870",
         "WeaponDmg": 94
+    },
+    {
+        "Name": "M4A1",
+        "WeaponDmg": 72
     }
 ]
