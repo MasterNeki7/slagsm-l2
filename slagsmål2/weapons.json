@@ -1,0 +1,46 @@
+[
+    {
+        "Name": "TOZ-106",
+        "WeaponDmg": 44
+    },
+    {
+        "Name": "VPO-209",
+        "WeaponDmg": 72
+    },
+    {
+        "Name": "SVDS",
+        "WeaponDmg": 84
+    },
+    {
+        "Name": "MP-43-1C",
+        "WeaponDmg": 54
+    },
+    {
+        "Name": "AKS-74U",
+        "WeaponDmg": 51
+    },
+    {
+        "Name": "MP-133",
+        "WeaponDmg": 66
+    },
+    {
+        "Name": "VPO-215",
+        "WeaponDmg": 72
+    },
+    {
+        "Name": "SA-58/FAL",
+        "WeaponDmg": 81
+    },
+    {
+        "Name": "SV-98",
+        "WeaponDmg": 101
+    },
+    {
+        "Name": "PP-19-Zenit",
+        "WeaponDmg": 39
+    },
+    {
+        "Name": "M870",
+        "WeaponDmg": 94
+    }
+]

@@ -1,9 +1,6 @@
 public class Weapon
 {
-    public int weaponDmg;
+    public int WeaponDmg { get; set; }
 
-    public string name;
-
-    public List<String> Weapons = new List<string>() { "Dagger", "Axe", "Spear" };
-
+    public string Name { get; set; }
 }

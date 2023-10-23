@@ -1,32 +1,34 @@
-﻿    List<Enemy> enemies = new();
+﻿List<Enemy> enemies = new();
 
-    Random generator = new Random();
+WeaponLocker locker = new();
 
-    for (int i = 0; i < 1; i++)
+Random generator = new Random();
+
+for (int i = 0; i < 1; i++)
+{
+    if (generator.Next(4) == 3 && enemies.Count(enemy => enemy.name == "Tagilla") == 0)
     {
-        if (generator.Next(4) == 3 && enemies.Count(enemy => enemy.name == "Tagilla") == 0)
-        {
-            enemies.Add(new Tagilla());
-        }
-        else
-        {
-            enemies.Add(new Enemy());
-        }
+        enemies.Add(new Tagilla());
     }
-
-    Enemy Player = new Enemy();
-    Console.WriteLine("Name your PMC");
-    Player.name = Console.ReadLine();
-
-
-    Console.Clear();
-    Console.WriteLine($"{Player.name} encountered");
-
-    foreach (Enemy e in enemies)
+    else
     {
-        Console.WriteLine(e.name);
+        enemies.Add(new Enemy());
     }
+}
 
-    Console.WriteLine($"!");
+Enemy Player = new Enemy();
+Console.WriteLine("Name your PMC");
+Player.name = Console.ReadLine();
+
+
+Console.Clear();
+Console.WriteLine($"{Player.name} encountered");
+
+foreach (Enemy e in enemies)
+{
+    Console.WriteLine(e.name);
+}
+
+Console.WriteLine($"!");
 
 Console.ReadLine();

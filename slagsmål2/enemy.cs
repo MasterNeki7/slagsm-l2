@@ -6,12 +6,15 @@ public class Enemy : Player
 
     public Enemy()
     {
+        WeaponLocker locker = new();
+
         int[] baseHpAlts = { 440, 560, 740 };
         baseHp = baseHpAlts[gen.Next(baseHpAlts.Length)];
         baseDmg = 5;
 
         name = Enemies[gen.Next(Enemies.Count)];
-        weapon = new Weapon() { name = weapon.Weapons[gen.Next(weapon.Weapons.Count)] };
+        weapon = locker.GimmeRandom();
+        // weapon = new Weapon() { name = weapon.Weapons[gen.Next(weapon.Weapons.Count)] };
     }
 
     public void Attack()
