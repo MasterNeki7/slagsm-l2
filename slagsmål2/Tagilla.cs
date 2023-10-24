@@ -13,7 +13,6 @@ public class Tagilla : Enemy
     public Tagilla()
     {
         name = "Tagilla";
-        // weapon = new Weapon() { name = "Sledgehammer" };
     }
 
     public void Attack()

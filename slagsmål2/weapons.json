@@ -1,50 +1,203 @@
 [
-    {
-        "Name": "TOZ-106",
-        "WeaponDmg": 44
-    },
-    {
-        "Name": "VPO-209",
-        "WeaponDmg": 72
-    },
-    {
-        "Name": "SVDS",
-        "WeaponDmg": 84
-    },
-    {
-        "Name": "MP-43-1C",
-        "WeaponDmg": 54
-    },
-    {
-        "Name": "AKS-74U",
-        "WeaponDmg": 51
-    },
-    {
-        "Name": "MP-133",
-        "WeaponDmg": 66
-    },
-    {
-        "Name": "VPO-215",
-        "WeaponDmg": 72
-    },
-    {
-        "Name": "SA-58/FAL",
-        "WeaponDmg": 81
-    },
-    {
-        "Name": "SV-98",
-        "WeaponDmg": 101
-    },
-    {
-        "Name": "PP-19-Zenit",
-        "WeaponDmg": 39
-    },
-    {
-        "Name": "M870",
-        "WeaponDmg": 94
-    },
-    {
-        "Name": "M4A1",
-        "WeaponDmg": 72
-    }
+  {
+    "Name": "SR-1MP",
+    "Calibre": "9x21",
+    "MisfireChance": 5
+  },
+  {
+    "Name": "MP-443",
+    "Calibre": "9x19",
+    "MisfireChance": 5
+  },
+  {
+    "Name": "P226R",
+    "Calibre": "9x19",
+    "MisfireChance": 5
+  },
+  {
+    "Name": "PB-Pistol",
+    "Calibre": "9x18",
+    "MisfireChance": 5
+  },
+  {
+    "Name": "APS",
+    "Calibre": "9x18",
+    "MisfireChance": 5
+  },
+  {
+    "Name": "TT",
+    "Calibre": "7.62x25",
+    "MisfireChance": 5
+  },
+  {
+    "Name": "M9A3",
+    "Calibre": "9x19",
+    "MisfireChance": 5
+  },
+  {
+    "Name": "M1911A1",
+    "Calibre": ".45ACP",
+    "MisfireChance": 5
+  },
+  {
+    "Name": "PL-15",
+    "Calibre": "9x19",
+    "MisfireChance": 5
+  },
+  {
+    "Name": "CR 200DS",
+    "Calibre": "9x19",
+    "MisfireChance": 15
+  },
+  {
+    "Name": "KS-23M",
+    "Calibre": "25x75",
+    "MisfireChance": 20
+  },
+  {
+    "Name": "M3 SUPER 90",
+    "Calibre": "12g",
+    "MisfireChance": 5
+  },
+  {
+    "Name": "MP-153",
+    "Calibre": "12g",
+    "MisfireChance": 10
+  },
+  {
+    "Name": "MP-133",
+    "Calibre": "12g",
+    "MisfireChance": 15
+  },
+  {
+    "Name": "MP-43_1C",
+    "Calibre": "12g",
+    "MisfireChance": 25
+  },
+  {
+    "Name": "SAIGA-12",
+    "Calibre": "12g",
+    "MisfireChance": 7
+  },
+  {
+    "Name": "TOZ-106",
+    "Calibre": "20g",
+    "MisfireChance": 35
+  },
+  {
+    "Name": "MP9",
+    "Calibre": "9x19"
+  },
+  {
+    "Name": "PP-91",
+    "Calibre": "9x18"
+  },
+  {
+    "Name": "SAIAG-9",
+    "Calibre": "9x19"
+  },
+  {
+    "Name": "PPSh-41",
+    "Calibre": "7.62x25"
+  },
+  {
+    "Name": "STM-9",
+    "Calibre": "9x19"
+  },
+  {
+    "Name": "MP5-KN",
+    "Calibre": "9x19"
+  },
+  {
+    "Name": "AS VAL",
+    "Calibre": "9x39"
+  },
+  {
+    "Name": "AK-12",
+    "Calibre": "5.45x39"
+  },
+  {
+    "Name": "AK-104",
+    "Calibre": "7.62x39"
+  },
+  {
+    "Name": "AK-105",
+    "Calibre": "5.45x39"
+  },
+  {
+    "Name": "AK-74N",
+    "Calibre": "5.45x39"
+  },
+  {
+    "Name": "AKS-74",
+    "Calibre": "5.45x39"
+  },
+  {
+    "Name": "AKMN",
+    "Calibre": "7.62x39"
+  },
+  {
+    "Name": "AKS-74UB",
+    "Calibre": "5.45x39"
+  },
+  {
+    "Name": "M4A1",
+    "Calibre": "5.56x45"
+  },
+  {
+    "Name": "SA-58",
+    "Calibre": "7.62x51"
+  },
+  {
+    "Name": "ADAR 2-15",
+    "Calibre": "5.56x45"
+  },
+  {
+    "Name": "OP-SKS",
+    "Calibre": "7.62x39"
+  },
+  {
+    "Name": "VPO-101",
+    "Calibre": "7.62x51"
+  },
+  {
+    "Name": "VPO-209",
+    "Calibre": "366TKM"
+  },
+  {
+    "Name": "VPO-136",
+    "Calibre": "7.62x39"
+  },
+  {
+    "Name": "SR-25",
+    "Calibre": "7.62x51"
+  },
+  {
+    "Name": "SVDS",
+    "Calibre": "7.62x54R"
+  },
+  {
+    "Name": "VSS Vintorez",
+    "Calibre": "9x39"
+  },
+  {
+    "Name": "Mosin Nagant",
+    "Calibre": "7.62x54R"
+  },
+  {
+    "Name": "M700",
+    "Calibre": "7.62x51"
+  },
+  {
+    "Name": "SV-98",
+    "Calibre": "7.62x54R"
+  },
+  {
+    "Name": "VPO-215",
+    "Calibre": "366TKM"
+  },
+  {
+    "Name": "DVL-10",
+    "Calibre": "7.62x51"
+  }
 ]

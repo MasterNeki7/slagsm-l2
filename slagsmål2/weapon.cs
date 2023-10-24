@@ -1,6 +1,10 @@
 public class Weapon
 {
-    public int WeaponDmg { get; set; }
-
     public string Name { get; set; }
+
+    public string Calibre { get; set; }
+
+    public int MisfireChance { get; set; }
+
+    
 }

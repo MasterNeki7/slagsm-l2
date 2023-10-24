@@ -14,7 +14,6 @@ public class Enemy : Player
 
         name = Enemies[gen.Next(Enemies.Count)];
         weapon = locker.GimmeRandom();
-        // weapon = new Weapon() { name = weapon.Weapons[gen.Next(weapon.Weapons.Count)] };
     }
 
     public void Attack()
