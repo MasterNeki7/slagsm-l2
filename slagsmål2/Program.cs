@@ -1,4 +1,4 @@
-﻿List<Enemy> enemies = new();
+﻿List<Scav> enemies = new();
 
 WeaponLocker locker = new();
 
@@ -12,11 +12,11 @@ for (int i = 0; i < 1; i++)
     }
     else
     {
-        enemies.Add(new Enemy());
+        enemies.Add(new Scav());
     }
 }
 
-Enemy Player = new Enemy();
+Scav Player = new Scav();
 Console.WriteLine("Name your PMC");
 Player.name = Console.ReadLine();
 
@@ -24,11 +24,9 @@ Player.name = Console.ReadLine();
 Console.Clear();
 Console.WriteLine($"{Player.name} encountered");
 
-foreach (Enemy e in enemies)
+foreach (Scav e in enemies)
 {
     Console.WriteLine(e.name);
 }
-
-Console.WriteLine($"!");
 
 Console.ReadLine();
