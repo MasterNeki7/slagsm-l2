@@ -10,5 +10,8 @@
     <ItemGroup>
     <Content Include="*.json" CopyToOutputDirectory="Always"/>
   </ItemGroup>
+      <ItemGroup>
+    <Content Include="*.csv" CopyToOutputDirectory="Always"/>
+  </ItemGroup>
 
 </Project>

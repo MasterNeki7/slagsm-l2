@@ -2,6 +2,8 @@
 
 WeaponLocker locker = new();
 
+BulletLocker locker2 = new();
+
 Random generator = new Random();
 
 for (int i = 0; i < 1; i++)
@@ -26,7 +28,16 @@ Console.WriteLine($"{Player.name} encountered");
 
 foreach (Scav e in enemies)
 {
-    Console.WriteLine(e.name);
+    Console.WriteLine($"{e.name} holding a {e.weapon.Name}.");
+
+    foreach (Bullets a in locker2.allTheAmmo.FindAll(ammo => ammo.Calibre == e.weapon.Calibre))
+    {
+        Console.WriteLine(a.Name);
+    }
 }
 
+
 Console.ReadLine();
+
+
+

@@ -2,7 +2,7 @@ public class Scav : Player
 {
     Random gen = new Random();
 
-    public List<String> Enemies = new List<String>() { "Yuriy Olegovic Gorbachov Petrov IX", "Baltazar Octavius Bartholomew Jr", "Hector Mc Ewen Quintalius Carolus VI", "Robert Aurelius Cesie Cornelius XV" };
+    public List<String> Enemies = new List<String>() { "Yuriy Olegovic Gorbachov Petrov IX", "Baltazar Octavius Bartholomew Jr", "Hector Mc Ewen Quintalius Carolus VI", "Robert Aurelius Cesie Cornelius XV", "Oliver" };
 
     public Scav()
     {
@@ -12,7 +12,7 @@ public class Scav : Player
         baseHp = baseHpAlts[gen.Next(baseHpAlts.Length)];
 
         name = Enemies[gen.Next(Enemies.Count)];
-        weapon = locker.GimmeRandom();
+        weapon = locker.WeaponRandom();
     }
 
     public void Attack()

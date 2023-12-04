@@ -1,5 +1,6 @@
 ﻿public class Bullets
 {
-    List<string> Calibre9x18 = new List<string>();
-
+        public string Calibre { get; set; }
+        public string Name { get; set; }
+        public int Damage { get; set; }
 }

@@ -229,5 +229,22 @@
     "Name": "DVL-10",
     "Calibre": "7.62x51",
     "MisfireChance": 0
+  },
+  {
+    "Name": "PKP",
+    "Calibre": "7.62x54R",
+    "MisfireChance": 25
+  },
+  {
+    "Name": "PKM",
+    "Calibre": "7.62x54R",
+    "MisfireChance": 25
+  },
+  {
+    "Name": "AK-101",
+    "Calibre": "5.56x45",
+    "MisfireChance": 3
   }
+
+
 ]
