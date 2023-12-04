@@ -18,14 +18,4 @@ public class Tagilla : Scav
         }
     }
 
-    public void Attack()
-    {
-
-    }
-
-    public void Defend()
-    {
-
-    }
-
 }

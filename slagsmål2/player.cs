@@ -3,19 +3,14 @@ public class Player
     protected Random gen = new Random();
 
     public Weapon weapon = new();
-    public int baseHp = 440;
     public string name;
-    
-    public int hp;
+    public int Hp;
 
-    public void Attack()
+    public Player()
     {
+        WeaponLocker locker = new();
+        Hp = 440;
 
-    }
-
-    public void Defend()
-    {
-        
     }
 
 }
